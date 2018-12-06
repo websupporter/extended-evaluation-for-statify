@@ -38,7 +38,8 @@ function eefstatifyColumnChart(id, x, y) {
             right: 30,
             bottom: 30,
             left: 30
-        }
+        },
+        height: 250
     };
 
     var responsiveOptions = [
@@ -81,11 +82,12 @@ function eefstatifyLineChart(id, x, y) {
         },
         plugins  : [
             Chartist.plugins.tooltip({
-                appendToBody: true,
+                anchorToPoint: false,
                 class: 'eefstatify-ct-tooltip'
             })
         ],
-        showArea : true
+        showArea : true,
+        height: 250
     };
 
     var chart = new Chartist.Line(id, data, options);

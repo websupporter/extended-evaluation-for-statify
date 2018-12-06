@@ -81,6 +81,10 @@
     background-color: #ffffff;
     border-radius: 0.2em;
     padding: 0.1em 0.5em;
+    display: none;
+}
+.eefstatify-ct-tooltip.tooltip-show {
+    display: block;
 }
 
 .eefstatify-ct-tooltip:before {
@@ -94,4 +98,12 @@
 .eefstatify .ct-series-a .ct-bar,
 .eefstatify .ct-series-a .ct-line {
     stroke: #0074a2;
+}
+
+.eefstatify .chart-svg-container{
+    position: relative;
+}
+
+.eefstatify .chartist-tooltip {
+    position: absolute;
 }

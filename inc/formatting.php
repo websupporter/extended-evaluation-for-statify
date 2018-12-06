@@ -304,7 +304,7 @@ function eefstatify_echo_chart_container( $id, $title, $subtitle = '' ) {
 		<div class="chart-subtitle">
 			<?php echo esc_html( get_bloginfo( 'name' ) . ' ' . $subtitle ); ?>
 		</div>
-		<div id="<?php echo esc_html( $id ); ?>"></div>
+		<div class="chart-svg-container" id="<?php echo esc_attr( $id ); ?>"></div>
 	</div>
 <?php
 }
